@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+*+*{
+    margin: 0;
+    padding: 0;
+}
+body>*>*{
+    padding-left: 0.5em;
+}
+#top{
+    background-color: red;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom:3em ;
+    background-color: gainsboro; 
+}
+nav > a{
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 0.5em;
+}
+nav > a:hover{
+    background-color: yellow;   
+}
+#movies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+#prices{
+    width: 20%;
+    border: solid black 0.2em;
+    border-radius: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+#prices>p{
+    margin-bottom: 1em;
+}
+#calculateCost{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+#calcRes{
+    margin-top: 1em;
+    background-color: red;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    border-top: solid black 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+footer>div>*{
+    margin-bottom: 1em;
+    text-align: center;
+}
+#movies > div{
+    margin: 2em;
+}
+#intro > p{
+    font-size: 1.2em;
+}
+.overlay{
+    display: none;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:rgba(0, 0, 0, 0.86); 
+}
+#closeOverlay{
+    position: fixed;
+    top: 10%;
+    left: 90%;
+}
+#desc{
+    background-color: white;
+    position:fixed;
+    top:10%;
+    left:20%;
+    right:20%;
+    height:50%;
+    width:60%;
+    border-radius: 25px;
+    opacity: 0;
+}
+#desc>*{
+    padding: 1em;
+}
